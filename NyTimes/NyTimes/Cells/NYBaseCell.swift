@@ -9,10 +9,20 @@
 import Foundation
 import UIKit
 
+
+struct NYBaseCellConstant {
+    
+    static let Identifier = "Identifier"
+}
+
 class NYBaseCell : UITableViewCell{
     
     func configure(data: Any , indexPath: IndexPath){
         
+    }
+    
+    @objc class var identifier: String {
+        return String(describing: self)
     }
     
 }

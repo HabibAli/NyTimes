@@ -14,9 +14,11 @@ class NYArticlesManager: NYBaseDAL {
     
     func getMostViewedArticlesManager(period : Int, completionBlock completion:@escaping NYDALCompletionBlock)  {
         
-        let endPoint = String.init(format: "%s/%s/%d",Constants.Endpoint.mostViewed,Constants.MostViwedAPIParam.AllSections,period)
-        self.post(url: endPoint,type: NYArticle.self,
-                  param: nil,
+        let endPoint = String.init(format: "%@/%@/%d.json",Constants.Endpoint.mostViewed,Constants.MostViwedAPIParam.AllSections,period)
+        var param = [String:Any]()
+        param[Constants.APIParam.APIKey] = Constants.NYAuthKey
+        self.get(url: endPoint,type: [NYArticle].self,
+                  param: param,
                   completion: completion) { (response, cBlock ) in
                    
                     cBlock(Constants.WebClientResponseStatus.Success,response)

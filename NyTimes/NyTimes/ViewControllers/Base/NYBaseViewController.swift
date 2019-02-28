@@ -68,9 +68,9 @@ class NYBaseViewController: UIViewController {
     
     @objc func showError(title:String?, message:String)
     {
-        let altError = UIAlertController(title: title,message: message,preferredStyle:UIAlertControllerStyle.alert)
+        let altError = UIAlertController(title: title,message: message,preferredStyle:UIAlertController.Style.alert)
         
-        altError.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:nil ))
+        altError.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:nil ))
         self.present(altError,animated: true, completion: nil)
     }
     

@@ -5,15 +5,15 @@
 	<key>BaseAPIURL</key>
 	<dict>
 		<key>DEMO</key>
-		<string>http://34.206.182.75/api/</string>
+		<string>http://api.nytimes.com/svc/mostpopular/v2/</string>
 		<key>DEV</key>
-		<string>http://10.164.2.82:8080/api/</string>
+		<string>http://api.nytimes.com/svc/mostpopular/v2/</string>
 		<key>PROD</key>
-		<string>https://api.brainxq.com/</string>
+		<string>http://api.nytimes.com/svc/mostpopular/v2/</string>
 		<key>QA</key>
-		<string>http://demo3.folio3.com:9090/api/</string>
+		<string>http://api.nytimes.com/svc/mostpopular/v2/</string>
 		<key>STAGE</key>
-		<string>http://34.206.182.75/stage/api/</string>
+		<string>http://api.nytimes.com/svc/mostpopular/v2/</string>
 	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

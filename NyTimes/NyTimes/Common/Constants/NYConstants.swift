@@ -14,7 +14,7 @@ typealias NYDALSuccessBlock = (_ response: Any,_ success: NYDALCompletionBlock) 
 
 struct Constants {
     
-    static let NYAuthKey = "AhF4GX5ERHmvlPSyQD8EQA" //should be obfuscated
+    static let NYAuthKey = "69jy951OpU5H2NAT4siG1V8KPlN9K56e" //should be obfuscated
     
     
     

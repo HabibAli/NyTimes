@@ -24,11 +24,22 @@ class NYArticleCell : NYBaseCell{
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDesc: UILabel!
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        imgVw.layer.cornerRadius = 30
+        imgVw.layer.masksToBounds = true
+    }
+    
     
     override func configure(data: Any, indexPath: IndexPath) {
         if let keyValue = data as? [String:Any]{
+            if let imageUrl = keyValue[NYArticleCellConstant.ArticleImageUrl] as? String{
+                imgVw.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "BlackCircle.png"))
+            }
+            else{
+                imgVw.image = UIImage.init(named: "BlackCircle.png")
+            }
             
-            imgVw.sd_setImage(with: URL(string: keyValue[NYArticleCellConstant.ArticleImageUrl] as! String), placeholderImage: UIImage(named: "BlackCircle.png"))
             lblTitle.text = keyValue[NYArticleCellConstant.ArticleTitle] as? String
             lblDesc.text = keyValue[NYArticleCellConstant.ArticleDesc] as? String
         }

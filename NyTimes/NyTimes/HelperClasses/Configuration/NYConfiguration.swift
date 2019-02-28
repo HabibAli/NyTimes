@@ -44,7 +44,7 @@ enum ServerConfig : String {
 extension ServerConfig: CaseIterable {}
 
 let defaultServerConfig : ServerConfig = .PROD
-let defaultServer : String = "http://api.nytimes.com/svc/mostpopular/v2"
+let defaultServer : String = "http://api.nytimes.com/svc/mostpopular/v2/"
 
 class NYConfiguration: NSObject {
     var resourceFileDictionary: NSDictionary?

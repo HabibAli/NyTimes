@@ -55,7 +55,7 @@ class NYBaseDAL: NSObject {
     
     func handleNoInternet<T>(responseData: Data, type:T.Type? = nil, completion completionBlock: @escaping NYDALCompletionBlock, success successBlock:@escaping NYDALSuccessBlock) -> Void where T : Decodable{
         let response = NSKeyedUnarchiver.unarchiveObject(with: responseData) as! [String : Any]
-        
+        completionBlock(Constants.WebClientResponseStatus.NoInternet,response)
         /*
         if let vc = ((UIApplication.shared.delegate?.window)!)!.rootViewController{
             let noInternetVC: NYNoInternetViewController = Utility.mainStoryboard.instantiateViewController(withIdentifier: "NYNoInternetViewController") as! NYNoInternetViewController

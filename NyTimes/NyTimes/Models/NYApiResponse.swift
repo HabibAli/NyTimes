@@ -13,7 +13,7 @@ struct NYApiResponse<T:Decodable> :Decodable {
     var status : String?
     var copyright : String?
     var num_results :Int?
-    var results : [T]?
+    var results : T?
 }
 
 struct NYError : Decodable {
@@ -38,15 +38,15 @@ struct NYArticle : Decodable {
     var title : String?
     var abstract : String?
     var published_date : String?
-    var source : Int?
+    var source : String?
     var id : Int?
     var asset_id : Int?
     var views : Int?
-    var des_facet : [String]?
-    var org_facet : [String]?
-    var per_facet : [String]?
-    var geo_facet : String?
-    var media : [MediaObj]
+    //var des_facet : [String]?
+    //var org_facet : [String]?
+    //var per_facet : [String]?
+    //var geo_facet : String?
+    var media : [MediaObj]?
 }
 
 struct MediaMetaData : Decodable {
@@ -62,42 +62,18 @@ struct MediaObj : Decodable {
     var subtype : String?
     var caption : String?
     var copyright : String?
-    var approved_for_syndication : String?
-    var mediametadata : [MediaMetaData]?
+    var approved_for_syndication : Int?
+    var mediaMetadata : [MediaMetaData]?
 
-    
-}
-
-
-
-/*//MARK: - Resources
-class BaseResourceObject: Decodable {
-    var category: Int?
-    var id : Int?
-    var title : String?
-    var tags: [String]?
-    var createdOn: Date?
-    var updatedOn: Date?
-    var favoriteCount: Int?
-    var isFavoritedByMe: Bool?
-}
-
-class HealthVideoObject: BaseResourceObject {
-    var url : String?
-    var description : String?
-    var isStory: Bool?
-    
     private enum CodingKeys:String, CodingKey{
-        case url
-        case description
-        case isStory
+        case type
+        case subtype
+        case caption
+        case copyright
+        case approved_for_syndication
+        case mediaMetadata = "media-metadata"
     }
     
-    required init(from decoder: Decoder) throws {
-        try super.init(from: decoder)
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        url = try container.decode(String?.self, forKey: .url)
-        description = try container.decode(String?.self, forKey: .description)
-        isStory = try container.decode(Bool?.self, forKey: .isStory)
-    }
-}*/
+    
+}
+
