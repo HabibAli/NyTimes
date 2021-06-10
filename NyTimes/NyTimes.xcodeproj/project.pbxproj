@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -65,14 +65,12 @@
 		10F12391B5934899ADE3C135 /* Pods-NyTimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NyTimesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NyTimesTests/Pods-NyTimesTests.release.xcconfig"; sourceTree = "<group>"; };
 		24B59D6D31E8185A6DA4314A /* Pods-NyTimes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NyTimes.release.xcconfig"; path = "Pods/Target Support Files/Pods-NyTimes/Pods-NyTimes.release.xcconfig"; sourceTree = "<group>"; };
 		603981076A2B7287B4429432 /* Pods_NyTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NyTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63F812DAF982D10FC23E42DB /* Pods-Brainllc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainllc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brainllc/Pods-Brainllc.debug.xcconfig"; sourceTree = "<group>"; };
 		753269C0DB486CA3397BBA5C /* Pods_NyTimesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NyTimesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		951EC4912227AA6E00D251C6 /* NyTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NyTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		951EC4932227AA6E00D251C6 /* NyTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyTimesTests.swift; sourceTree = "<group>"; };
 		951EC4952227AA6E00D251C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95A30C9F222658E20012EBA8 /* NYBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYBaseCell.swift; sourceTree = "<group>"; };
 		95A30CA2222658FF0012EBA8 /* NYArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYArticleCell.swift; sourceTree = "<group>"; };
-		9B58F2699C90C8B2B9ED0FA8 /* Pods_Brainllc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brainllc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A506D4667C1313E715B3BE48 /* Pods-NyTimesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NyTimesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NyTimesUITests/Pods-NyTimesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A948A8FBC794076EFCA69AF3 /* Pods-NyTimesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NyTimesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NyTimesUITests/Pods-NyTimesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C21A554A631458904C8A7011 /* Pods-NyTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NyTimes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NyTimes/Pods-NyTimes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 		D1587E5B20E602E700E87313 /* Nytimes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nytimes-Bridging-Header.h"; sourceTree = "<group>"; };
 		D1C39D2220E4B7BA006FA0A6 /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
 		D1C39D2320E4B7BA006FA0A6 /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
-		D541CDB541960FD37FF7CB47 /* Pods-Brainllc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainllc.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brainllc/Pods-Brainllc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +129,6 @@
 		13BC0954FCFBC27DE0B18DC9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				63F812DAF982D10FC23E42DB /* Pods-Brainllc.debug.xcconfig */,
-				D541CDB541960FD37FF7CB47 /* Pods-Brainllc.release.xcconfig */,
 				C21A554A631458904C8A7011 /* Pods-NyTimes.debug.xcconfig */,
 				24B59D6D31E8185A6DA4314A /* Pods-NyTimes.release.xcconfig */,
 				0CDCED00D307B341B81A62C6 /* Pods-NyTimesTests.debug.xcconfig */,
@@ -175,7 +170,6 @@
 			children = (
 				C76C1622216237FD00EFE9A5 /* SystemConfiguration.framework */,
 				C76C1620216237F300EFE9A5 /* CoreTelephony.framework */,
-				9B58F2699C90C8B2B9ED0FA8 /* Pods_Brainllc.framework */,
 				603981076A2B7287B4429432 /* Pods_NyTimes.framework */,
 				CE9F9C91FC55CBE210458E4E /* Pods_NyTimesTests.framework */,
 				753269C0DB486CA3397BBA5C /* Pods_NyTimesUITests.framework */,

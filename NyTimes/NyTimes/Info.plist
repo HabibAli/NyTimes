@@ -38,7 +38,7 @@
 			<string>com.test.nytimes</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>brainxq</string>
+				<string>nytimes</string>
 			</array>
 		</dict>
 	</array>
